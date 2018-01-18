@@ -27,16 +27,19 @@ export default {
   },
   methods: {
     sair(){
-      this.serice.ExitUser(this.$router);
+      //this.serice.ExitUser(this.$router);
       //assim funciona
       //this.$router.push({ name: 'login' });
+      this.serice.ExitUser();
     },
     verifica(){
       this.contador++;
       if (this.contador >= 5){
         // devo expulsar o user de dentro do sistema
         //this.$router.push({ name: 'login' });
-        this.serice.ExitUser(this.$router);
+        //this.serice.ExitUser(this.$router);
+        this.serice.ExitUser();
+
       }
     }
   },

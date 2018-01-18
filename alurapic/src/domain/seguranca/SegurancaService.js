@@ -9,7 +9,10 @@ export default class SegurancaService {
     // Chamo para expulsar user
     // Assim funciona porem no meu codigo de produção não tenho certeza que vou semtre chamar
     // esse metodo dentro de um componente aonde tenho um this.$router
-    ExitUser (router) {
+    /*ExitUser (router) {
         router.push({ name: 'login' });
+    };*/
+    ExitUser () {
+        VueRouter.router.push({ name: 'login' });
     };
 }
